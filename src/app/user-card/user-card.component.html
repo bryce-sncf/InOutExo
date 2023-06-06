@@ -1,0 +1,9 @@
+<div>
+  <div>
+    <app-user-stats
+      *ngFor="let userParent of allUsers"
+      [userChild]="userParent"
+      (deleteUserEvent)="deleteUser($event)"
+    ></app-user-stats>
+  </div>
+</div>
